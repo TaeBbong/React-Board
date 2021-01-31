@@ -1,0 +1,14 @@
+.centered {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    background-color: white;
+    overflow: auto;
+}
+
+.columns {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
