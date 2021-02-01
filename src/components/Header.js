@@ -1,4 +1,6 @@
 import React from "react";
+import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   return (
@@ -11,11 +13,13 @@ const Header = () => {
       <div className="navbar-end">
         <div className="navbar-item">
           <div className="buttons">
-            <a className="button is-primary" href="/">
-              <strong>회원가입</strong>
-            </a>
-            <a className="button is-light" href="/login">
-              <strong>로그인</strong>
+            <a className="button is-primary" href="/login">
+              <span className="icon">
+                <FontAwesomeIcon icon={faSignInAlt} />
+              </span>
+              <span>
+                <strong>로그인</strong>
+              </span>
             </a>
           </div>
         </div>

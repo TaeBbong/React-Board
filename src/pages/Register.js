@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../shared/App.css";
 
-class Login extends Component {
+class Register extends Component {
   render() {
     return (
       <section className="hero is-warning is-large">
@@ -61,24 +60,6 @@ class Login extends Component {
                     </div>
                   </div>
                 </form>
-                <br />
-                <div className="content tcentered">
-                  <strong>또는</strong>
-                </div>
-                <div className="buttons is-centered">
-                  <button class="button is-white">
-                    <span className="icon">
-                      <FontAwesomeIcon icon={faGithub} />
-                    </span>
-                    <span>Github</span>
-                  </button>
-                  <button class="button is-info">
-                    <span className="icon">
-                      <FontAwesomeIcon icon={faFacebook} />
-                    </span>
-                    <span>Facebook</span>
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -88,4 +69,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default Register;

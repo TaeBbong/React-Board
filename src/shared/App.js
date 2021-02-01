@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import { Main, Like, My, Login, Detail } from "../pages/index";
+import { Main, Like, My, Login, Detail, Register } from "../pages/index";
 import { Header, Footer, Menu } from "../components/index";
 import "./App.css";
 
@@ -22,7 +22,10 @@ class App extends Component {
         <div className="centered">
           <Route path="/detail" component={Detail} />
         </div>
-        <Route path="/login" component={Login} />
+        <div>
+          <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
+        </div>
         <Footer />
       </div>
     );
