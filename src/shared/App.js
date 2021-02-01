@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
 import { Main, Like, My, Login, Detail } from "../pages/index";
-import { Header, Footer } from "../components/index";
+import { Header, Footer, Menu } from "../components/index";
 import "./App.css";
 
 class App extends Component {
@@ -9,6 +9,11 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <div className="centered">
+          <Route exact path="/" component={Menu} />
+          <Route path="/like" component={Menu} />
+          <Route path="/my" component={Menu} />
+        </div>
         <div className="centered">
           <Route exact path="/" component={Main} />
           <Route path="/like" component={Like} />
