@@ -14,10 +14,12 @@ class App extends Component {
           <Route path="/like" component={Menu} />
           <Route path="/my" component={Menu} />
         </div>
-        <div className="centered">
+        <div className="ncentered">
           <Route exact path="/" component={Main} />
           <Route path="/like" component={Like} />
           <Route path="/my" component={My} />
+        </div>
+        <div className="centered">
           <Route path="/detail" component={Detail} />
         </div>
         <Route path="/login" component={Login} />

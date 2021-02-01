@@ -7,9 +7,19 @@
     /* padding: 20px; */
 }
 
-.centered-padding {
+.ncentered {
+    justify-content: center;
+    align-items: center;
     padding: 20px;
 }
+
+.centered-padding {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: fit-content;
+    padding: 20px;
+}
+
 
 p {
     max-width: 640px;

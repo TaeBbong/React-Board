@@ -6,6 +6,9 @@ class Main extends Component {
     return (
       <div>
         <Grid />
+        <Grid />
+        <Grid />
+        <Grid />
       </div>
     );
   }

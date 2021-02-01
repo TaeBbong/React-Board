@@ -1,10 +1,9 @@
 import React from "react";
 import "../shared/App.sass";
-import "../shared/App.css";
 
 const Grid = (props) => {
   return (
-    <div className="columns centered-padding">
+    <div className="columns">
       <div className="column">
         <a className="card" href="/detail">
           <div className="card-image">

@@ -6,7 +6,9 @@ class Detail extends Component {
     return (
       <div>
         <Post />
+        <hr />
         <Comment />
+        <br />
       </div>
     );
   }
