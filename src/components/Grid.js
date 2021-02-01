@@ -1,11 +1,12 @@
 import React from "react";
 import "../shared/App.sass";
+import "../shared/App.css";
 
 const Grid = (props) => {
   return (
     <div className="columns">
       <div className="column">
-        <div className="card">
+        <a className="card" href="/detail">
           <div className="card-image">
             <figure className="image is-4by3">
               <img
@@ -32,7 +33,7 @@ const Grid = (props) => {
               <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div className="column">
         <div className="card">
