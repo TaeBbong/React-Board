@@ -27,9 +27,23 @@ class Register extends Component {
                       </span>
                     </div>
                   </div>
+                  <div className="field">
+                    <label className="label">닉네임</label>
+                    <div className="control has-icons-left">
+                      <input
+                        type="text"
+                        placeholder="e.g. bobsmith@gmail.com"
+                        class="input"
+                        required
+                      />
+                      <span className="icon is-small is-left">
+                        <FontAwesomeIcon icon={faEnvelope} />
+                      </span>
+                    </div>
+                  </div>
                   <div class="field">
                     <label for="" class="label">
-                      패스워드
+                      비밀번호
                     </label>
                     <div class="control has-icons-left">
                       <input
@@ -43,21 +57,26 @@ class Register extends Component {
                       </span>
                     </div>
                   </div>
-                  <div className="level">
-                    <div className="level-left">
-                      <div className="level-item">
-                        <div class="field">
-                          <button class="button is-primary">로그인</button>
-                        </div>
-                      </div>
+                  <div class="field">
+                    <label for="" class="label">
+                      비밀번호 확인
+                    </label>
+                    <div class="control has-icons-left">
+                      <input
+                        type="password"
+                        placeholder="*******"
+                        class="input"
+                        required
+                      />
+                      <span class="icon is-small is-left">
+                        <FontAwesomeIcon icon={faLock} />
+                      </span>
                     </div>
-                    <div className="level-right">
-                      <div className="level-item">
-                        <a className="is-link" href="/register">
-                          회원가입
-                        </a>
-                      </div>
-                    </div>
+                  </div>
+                  <div class="field">
+                    <button class="button is-primary is-fullwidth">
+                      회원가입
+                    </button>
                   </div>
                 </form>
               </div>

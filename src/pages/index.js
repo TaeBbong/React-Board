@@ -4,3 +4,6 @@ export { default as My } from "./My";
 export { default as Login } from "./Login";
 export { default as Register } from "./Register";
 export { default as Detail } from "./Detail";
+export { default as New } from "./New";
+export { default as Profile } from "./Profile";
+export { default as ProfileEdit } from "./ProfileEdit";

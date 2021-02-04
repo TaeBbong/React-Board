@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import { Main, Like, My, Login, Detail, Register } from "../pages/index";
+import {
+  Main,
+  Like,
+  My,
+  Login,
+  Detail,
+  Register,
+  New,
+  Profile,
+  ProfileEdit,
+} from "../pages/index";
 import { Header, Footer, Menu } from "../components/index";
 import "./App.css";
 
@@ -21,6 +31,9 @@ class App extends Component {
         </div>
         <div className="centered">
           <Route path="/detail" component={Detail} />
+          <Route path="/new" component={New} />
+          <Route exact path="/profile" component={Profile} />
+          <Route path="/profile/edit" component={ProfileEdit} />
         </div>
         <div>
           <Route path="/login" component={Login} />

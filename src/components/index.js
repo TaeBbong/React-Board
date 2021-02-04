@@ -4,3 +4,4 @@ export { default as Footer } from "./Footer";
 export { default as Grid } from "./Grid";
 export { default as Post } from "./Post";
 export { default as Comment } from "./Comment";
+export { default as Form } from "./Form";
