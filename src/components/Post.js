@@ -4,11 +4,13 @@ import { faShareAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../shared/App.css";
 
-const Post = () => {
+const Post = (props) => {
+  console.log("[Post.js] Constructor");
+  console.log(props);
   return (
     <section>
       <div className="head">
-        <h1 className="title">안녕하세요, TaeBbong입니다.</h1>
+        <h1 className="title">{props.Title}</h1>
         <div className="level">
           <div className="level-left">
             <div className="level-item">

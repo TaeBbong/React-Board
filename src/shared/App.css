@@ -37,4 +37,14 @@
 
 p {
     max-width: 640px;
+    word-break: break-all;
+}
+
+.preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
 }

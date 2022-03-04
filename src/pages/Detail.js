@@ -3,9 +3,11 @@ import { Post, Comment } from "../components/index";
 
 class Detail extends Component {
   render() {
+    const post = this.props.post;
+    console.log(this.props.params);
     return (
       <div>
-        <Post />
+        <Post post={post} />
         <hr />
         <Comment />
         <br />
